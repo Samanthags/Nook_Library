@@ -54,6 +54,12 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
+
+.logo {
+  height:150px ;
+  width: 150px;
+
+}
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
 .hero {

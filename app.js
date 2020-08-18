@@ -106,7 +106,7 @@ setCartValues(cart){
         itemsTotal += item.amount;
     });
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
-    cartItems.innertext = itemsTotal;   
+    cartItems.innerText = itemsTotal;   
     
 }
 

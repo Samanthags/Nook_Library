@@ -167,7 +167,8 @@ div.innerHTML = `<img src=${item.image} alt="product"/>
             else if(event.target.classList.contains("fa-chevron-up")){
                 let addAmount = event.target;
                 let id = addAmount.dataset.id;
-                console.log(addAmount);
+                let tempItem = cart.find(item => item.id===id);
+                tempItem.amount = tempItem.amount + 1;
             }
         });
     }
@@ -177,8 +178,9 @@ div.innerHTML = `<img src=${item.image} alt="product"/>
 
 
         while(cartContent.children.length > 0){
-        cartContent.removeChild(cartContent.children[0])
+        cartContent.removeChild(cartContent.children[0]);
         }
+        this.hideCart();
     }
     removeItem(id){
         cart = cart.filter(item => item.id !==id);
@@ -225,7 +227,8 @@ products.getProducts().then(products => {
 
 ui.displayProducts(products);
 Storage.saveProducts(products);
-}).then(()=>{
+})
+.then(()=>{
 ui.getBagButtons();
 ui.cartLogic();
 });

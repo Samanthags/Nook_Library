@@ -76,10 +76,10 @@ body {
   padding: 2rem;
 }
 .banner-title {
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 3rem;
+  margin-bottom: 3rem;  
 }
 .banner-btn {
   padding: 1rem 3rem;
@@ -265,3 +265,16 @@ body {
 }
 
 /* --------------- End of Cart ---------------- */
+
+
+
+/* --------------- Footer ---------------- */
+
+footer{
+  color: black;
+  background-color: rgb(229, 226, 226) ;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+}

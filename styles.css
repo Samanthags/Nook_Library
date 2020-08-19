@@ -79,7 +79,7 @@ padding: 0 15px;
   padding: 10px 0px;
   font-size: 16px;
   text-transform: uppercase;
-  color: #fff;
+  color:#000;
   position: relative;
 
 }
@@ -91,7 +91,7 @@ padding: 0 15px;
   margin-top: -5px;
   height: 2px;
   left: 0px;
-  background-color: black;
+  background-color: #36827F;
   width:0%;
   transition:width .5s ease;
 }
